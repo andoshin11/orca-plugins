@@ -1,0 +1,16 @@
+{
+  "name": "andoshin11's Orca plugins",
+  "owner": "andoshin11",
+  "plugins": [
+    {
+      "id": "andoshin11.agent-status-relay",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/andoshin11/orca-agent-status-relay",
+        "ref": "v0.1.0"
+      },
+      "description": "Forwards agent status changes (turn done, waiting, blocked) to a URL you configure, signed with Standard Webhooks. Used by orca-dots-bridge to notify ChatGPT dot.",
+      "categories": ["notifications"]
+    }
+  ]
+}
