@@ -1,0 +1,136 @@
+{
+  "$schema": "https://raw.githubusercontent.com/stablyai/orca/main/docs/schemas/plugins/orca-catalog.v2.schema.json",
+  "catalogVersion": 2,
+  "name": "andoshin11's Orca plugins",
+  "owner": "andoshin11",
+  "plugins": [
+    {
+      "id": "andoshin11.agent-status-relay",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/andoshin11/orca-agent-status-relay",
+        "ref": "main"
+      },
+      "description": "Forwards agent status changes (turn done, waiting, blocked) to a URL you configure, signed with Standard Webhooks. Used by orca-dots-bridge to notify ChatGPT dot.",
+      "categories": [
+        "notifications"
+      ],
+      "releases": [
+        {
+          "version": "0.2.0",
+          "commit": "15a7100ec2751a016afe9dbd7bf5f61783aed5f8",
+          "contentHash": "d094dca2dfbbe74cc61fda77cac807ffab4cb15dd5c9cd519bca9fe66b3a2f39",
+          "execution": "trusted-worker",
+          "minimumOrca": "1.4.245",
+          "name": "Agent Status Relay",
+          "contributes": [
+            {
+              "kind": "commands",
+              "name": "Agent Status Relay: Send test event"
+            },
+            {
+              "kind": "events",
+              "name": "agent.status.changed"
+            }
+          ],
+          "capabilities": [
+            "agent:read"
+          ],
+          "changelog": "manifest format 2 に移しました。動作は変わりません。",
+          "repository": "https://github.com/andoshin11/orca-agent-status-relay",
+          "license": "MIT"
+        }
+      ]
+    },
+    {
+      "id": "andoshin11.milestone",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/andoshin11/orca-milestone",
+        "ref": "main"
+      },
+      "description": "Shows the tasks Claude Code and Codex are working through in the focused workspace as milestones in the right sidebar.",
+      "categories": [
+        "agents"
+      ],
+      "releases": [
+        {
+          "version": "0.4.1",
+          "commit": "d032b4ca5b0897a70bc055de85983c81e2755723",
+          "contentHash": "68208f3e12feeb3407ec922a14bac3dbf8dfe1950a195a27df214bb094ad6fa1",
+          "execution": "trusted-worker",
+          "minimumOrca": "1.4.248",
+          "name": "Milestone",
+          "contributes": [
+            {
+              "kind": "panels",
+              "name": "Milestones"
+            },
+            {
+              "kind": "commands",
+              "name": "Milestone: Refresh"
+            },
+            {
+              "kind": "events",
+              "name": "agent.status.changed"
+            },
+            {
+              "kind": "events",
+              "name": "workspace.changed"
+            },
+            {
+              "kind": "hooks",
+              "name": "agent.launch.before"
+            }
+          ],
+          "capabilities": [
+            "workspace:read",
+            "agent:read",
+            "workspace:write"
+          ],
+          "changelog": "Orca が起動する Claude Code に、タスクを記録する指示を自動で足します。",
+          "repository": "https://github.com/andoshin11/orca-milestone",
+          "license": "MIT"
+        },
+        {
+          "version": "0.4.0",
+          "commit": "99280c5285615d9cf7d46378fdc897ee88c6918d",
+          "contentHash": "e8d73455ea7f1087f48216f4fcc280983c9800d4438343ce200d2a92f472790f",
+          "execution": "trusted-worker",
+          "minimumOrca": "1.4.248",
+          "name": "Milestone",
+          "contributes": [
+            {
+              "kind": "panels",
+              "name": "Milestones"
+            },
+            {
+              "kind": "commands",
+              "name": "Milestone: Refresh"
+            },
+            {
+              "kind": "events",
+              "name": "agent.status.changed"
+            },
+            {
+              "kind": "events",
+              "name": "workspace.changed"
+            },
+            {
+              "kind": "hooks",
+              "name": "agent.launch.before"
+            }
+          ],
+          "capabilities": [
+            "workspace:read",
+            "agent:read",
+            "workspace:write"
+          ],
+          "changelog": "Codex の進捗表示、行を押して移動、行のその場での展開を追加しました。",
+          "repository": "https://github.com/andoshin11/orca-milestone",
+          "license": "MIT"
+        }
+      ]
+    }
+  ]
+}
