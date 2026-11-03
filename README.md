@@ -16,5 +16,6 @@ The plugins below then appear in the plugin list. Installing one shows the permi
 | Plugin | Description |
 | --- | --- |
 | [`andoshin11.agent-status-relay`](https://github.com/andoshin11/orca-agent-status-relay) | Forwards agent status changes (turn done, waiting, blocked) to a URL, signed with Standard Webhooks. Used by [orca-dots-bridge](https://github.com/andoshin11/orca-dots-bridge) to notify ChatGPT dot. |
+| [`andoshin11.milestone`](https://github.com/andoshin11/orca-milestone) | Shows the tasks Claude Code and Codex are working through as milestones in the right sidebar. Needs Orca 1.4.247 or later. |
 
 Each entry pins a Git tag; a new plugin version is published by updating its `ref` in `orca-marketplace.json`.

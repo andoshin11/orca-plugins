@@ -10,7 +10,21 @@
         "ref": "v0.1.0"
       },
       "description": "Forwards agent status changes (turn done, waiting, blocked) to a URL you configure, signed with Standard Webhooks. Used by orca-dots-bridge to notify ChatGPT dot.",
-      "categories": ["notifications"]
+      "categories": [
+        "notifications"
+      ]
+    },
+    {
+      "id": "andoshin11.milestone",
+      "source": {
+        "kind": "git",
+        "url": "https://github.com/andoshin11/orca-milestone",
+        "ref": "v0.4.0"
+      },
+      "description": "Shows the tasks Claude Code and Codex are working through in the focused workspace as milestones in the right sidebar.",
+      "categories": [
+        "agents"
+      ]
     }
   ]
 }
