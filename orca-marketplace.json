@@ -19,7 +19,7 @@
       "source": {
         "kind": "git",
         "url": "https://github.com/andoshin11/orca-milestone",
-        "ref": "v0.4.0"
+        "ref": "v0.4.1"
       },
       "description": "Shows the tasks Claude Code and Codex are working through in the focused workspace as milestones in the right sidebar.",
       "categories": [
