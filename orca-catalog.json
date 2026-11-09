@@ -55,6 +55,42 @@
       ],
       "releases": [
         {
+          "version": "0.5.0",
+          "commit": "9179eda6848b5bf8607d5dd8f200ed3fd60ac772",
+          "contentHash": "b79b620dd9b437d6578b60f5ca5cd6b2109c534a5eeae713903d08f22acca5bf",
+          "execution": "trusted-worker",
+          "minimumOrca": "1.4.248",
+          "name": "Milestone",
+          "contributes": [
+            {
+              "kind": "panels",
+              "name": "Milestones"
+            },
+            {
+              "kind": "commands",
+              "name": "Milestone: Refresh"
+            },
+            {
+              "kind": "events",
+              "name": "agent.status.changed"
+            },
+            {
+              "kind": "events",
+              "name": "workspace.changed"
+            },
+            {
+              "kind": "hooks",
+              "name": "agent.launch.before"
+            }
+          ],
+          "capabilities": [
+            "workspace:read",
+            "agent:read",
+            "workspace:write"
+          ],
+          "changelog": "作業を終えた Claude Code と Codex に、次にやることの候補を回答の最後に書く指示を自動で足します。"
+        },
+        {
           "version": "0.4.1",
           "commit": "d032b4ca5b0897a70bc055de85983c81e2755723",
           "contentHash": "68208f3e12feeb3407ec922a14bac3dbf8dfe1950a195a27df214bb094ad6fa1",
