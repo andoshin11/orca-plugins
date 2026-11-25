@@ -55,6 +55,42 @@
       ],
       "releases": [
         {
+          "version": "0.13.1",
+          "commit": "8785476b59fef3b9d8c2ead5afe5b750bbb7708d",
+          "contentHash": "7fcbb4153eb498a21e6b0b610c705894fe2249e64ef9130e8060653cb6ddee71",
+          "execution": "trusted-worker",
+          "minimumOrca": "1.4.248",
+          "name": "Milestone",
+          "contributes": [
+            {
+              "kind": "panels",
+              "name": "Milestones"
+            },
+            {
+              "kind": "commands",
+              "name": "Milestone: Refresh"
+            },
+            {
+              "kind": "events",
+              "name": "agent.status.changed"
+            },
+            {
+              "kind": "events",
+              "name": "workspace.changed"
+            },
+            {
+              "kind": "hooks",
+              "name": "agent.launch.before"
+            }
+          ],
+          "capabilities": [
+            "workspace:read",
+            "agent:read",
+            "workspace:write",
+            "settings:own"
+          ]
+        },
+        {
           "version": "0.13.0",
           "commit": "50be41bd6d4029eb901ff896e9adbe43ccc66dce",
           "contentHash": "7767d73ddd9aceef2d5f788161f06d46c30044b791b0886941e3d7a1ed54d8c6",
